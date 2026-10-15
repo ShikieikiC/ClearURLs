@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 260px; font: 13px/1.5 system-ui, sans-serif; margin: 12px; }
+  .row { display: flex; align-items: center; justify-content: space-between; margin: 8px 0; }
+  .count { font-size: 22px; font-weight: 600; }
+  button { cursor: pointer; }
+  .muted { color: #777; font-size: 11px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <b>ClearURLs Lite</b>
+    <button id="toggle"></button>
+  </div>
+  <div class="row">
+    <span>清理参数次数</span>
+    <span class="count" id="count">0</span>
+  </div>
+  <div class="row">
+    <button id="reset">清零统计</button>
+  </div>
+  <div class="muted">基于 ClearURLs Rules (LGPL-3.0) 转换的 DNR 规则</div>
+  <script src="popup.js"></script>
+</body>
+</html>
